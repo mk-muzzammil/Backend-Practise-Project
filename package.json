@@ -1,11 +1,11 @@
 {
   "name": "youtubeclone",
   "version": "1.0.0",
-  "description": "A backend porject for practising backend processing",
+  "description": "A backend project for practicing backend processing",
   "type": "module",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon src/index.js"
+    "dev": "nodemon -r dotenv/config src/index.js"
   },
   "keywords": [
     "backend",
@@ -18,5 +18,10 @@
   "devDependencies": {
     "nodemon": "^3.0.3",
     "prettier": "^3.2.5"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.2",
+    "express": "^4.18.2",
+    "mongoose": "^8.1.1"
   }
 }
