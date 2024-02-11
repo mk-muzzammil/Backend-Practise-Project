@@ -1,0 +1,22 @@
+{
+  "name": "youtubeclone",
+  "version": "1.0.0",
+  "description": "A backend porject for practising backend processing",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon src/index.js"
+  },
+  "keywords": [
+    "backend",
+    "chai",
+    "aur",
+    "backend"
+  ],
+  "author": "Muhammad Muzzammil",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^3.0.3",
+    "prettier": "^3.2.5"
+  }
+}
