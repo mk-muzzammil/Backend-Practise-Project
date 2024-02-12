@@ -4,7 +4,16 @@ dotenv.config({
   path: "./env",
 });
 
-connectionDB();
+connectionDB()
+  .then(() => {
+    application.listen(process.env.PORT || 8000, () => {
+      console.log(`Server is running on port ${process.env.PORT}`);
+    });
+  })
+  .catch((error) => {
+    console.error("Connection DB Failed ", error);
+    process.exit(1);
+  });
 
 //===================================A code to connect to database in index.js which is not professional way to connect to database========================
 // import express from "express";
